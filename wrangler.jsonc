@@ -1,0 +1,21 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "kura-restaurant-example",
+  "main": ".open-next/worker.js",
+  "compatibility_date": "2026-05-20",
+  "compatibility_flags": ["nodejs_compat", "global_fetch_strictly_public"],
+  "workers_dev": true,
+  "observability": { "enabled": true },
+  "assets": {
+    "directory": ".open-next/assets",
+    "binding": "ASSETS"
+  },
+  "vars": {
+    "KURA_BASE_URL": "https://kuracms.com",
+    "KURA_PROJECT": "restaurant",
+    "KURA_TOKEN": "kr_live_zkrTpAyd8l4JuhoJ8AtB91wlgksVlio"
+  },
+  "routes": [
+    { "pattern": "restaurant.kuracms.com", "custom_domain": true, "zone_name": "kuracms.com" }
+  ]
+}

@@ -1,0 +1,41 @@
+@import "tailwindcss";
+
+:root {
+  --bg: #fbf6ec;          /* warm cream */
+  --bg-soft: #f4ebd9;     /* paler cream for cards */
+  --ink: #1f1a14;         /* near-black warm */
+  --muted: #6b6256;
+  --line: #ddd2bd;
+  --accent: #8b2a1b;      /* deep tomato red */
+  --accent-ink: #fdf5e8;
+}
+
+@theme inline {
+  --color-bg: var(--bg);
+  --color-bg-soft: var(--bg-soft);
+  --color-ink: var(--ink);
+  --color-muted: var(--muted);
+  --color-line: var(--line);
+  --color-accent: var(--accent);
+  --color-accent-ink: var(--accent-ink);
+  --font-serif: var(--font-fraunces);
+  --font-sans: var(--font-inter);
+}
+
+body {
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  font-feature-settings: "ss01" on, "cv11" on;
+  -webkit-font-smoothing: antialiased;
+}
+
+.font-display {
+  font-family: var(--font-fraunces), ui-serif, "Iowan Old Style", Georgia, serif;
+  font-feature-settings: "ss01" on, "ss02" on, "ss03" on, "swsh" on;
+}
+
+.subtle-grain {
+  background-image: radial-gradient(rgba(31, 26, 20, 0.025) 1px, transparent 1px);
+  background-size: 3px 3px;
+}

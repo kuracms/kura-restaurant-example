@@ -1,6 +1,6 @@
 export const metadata = {
-  title: "Visit - Comptoir Mireille",
-  description: "How to find Comptoir Mireille in the 11th arrondissement, Paris.",
+  title: "Visit - The Bistro",
+  description: "How to find The Bistro in the 11th arrondissement, Paris.",
 };
 
 export default function VisitPage() {
@@ -38,11 +38,8 @@ export default function VisitPage() {
           </p>
           <p className="leading-relaxed">
             Walk-in for lunch and weekday dinners. Sunday lunch by email:{" "}
-            <a
-              className="underline underline-offset-4"
-              href="mailto:bonjour@comptoir-mireille.example"
-            >
-              bonjour@comptoir-mireille.example
+            <a className="underline underline-offset-4" href="mailto:hello@thebistro.example">
+              hello@thebistro.example
             </a>
             .
           </p>
@@ -60,7 +57,7 @@ export default function VisitPage() {
 
       <div className="mt-14 aspect-[16/9] rounded-sm overflow-hidden border border-[var(--line)] bg-[var(--bg-soft)]">
         <iframe
-          title="Map of Comptoir Mireille"
+          title="Map of The Bistro"
           src="https://maps.google.com/maps?q=48.866,2.376&z=16&output=embed"
           loading="lazy"
           referrerPolicy="no-referrer-when-downgrade"

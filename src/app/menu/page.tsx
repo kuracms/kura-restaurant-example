@@ -20,9 +20,9 @@ export default async function MenuPage() {
           The menu, as it stands.
         </h1>
         <p className="mt-6 text-[var(--muted)] max-w-2xl leading-relaxed">
-          Prices in euros, service compris, no covert covert charge. Most things take a few minutes
-          &mdash; the steak is fast, the duck takes longer, the blanquette is whatever it&rsquo;s
-          ready to be. Allergies, tell the cook when you sit down.
+          Prices in euros, tax and service included, no cover charge. The steak is fast, the duck
+          takes longer, the slow-cooked dishes are whatever they&rsquo;re ready to be. Allergies,
+          tell the cook when you sit down.
         </p>
       </header>
 

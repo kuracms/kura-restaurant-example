@@ -39,9 +39,8 @@ export interface MenuItem {
   title: string;
   section: string;
   description: string;
-  price_jpy: number;
+  price_eur: number;
   photo?: string | null;
-  spice?: "none" | "mild" | "medium" | "hot";
   vegetarian?: boolean;
   published?: boolean;
   published_at: string | null;
@@ -70,10 +69,10 @@ export async function fetchItems(): Promise<MenuItem[]> {
   return r.data;
 }
 
-export function formatJpy(n: number): string {
-  return new Intl.NumberFormat("ja-JP", {
+export function formatEur(n: number): string {
+  return new Intl.NumberFormat("fr-FR", {
     style: "currency",
-    currency: "JPY",
+    currency: "EUR",
     maximumFractionDigits: 0,
   }).format(n);
 }

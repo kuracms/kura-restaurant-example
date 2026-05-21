@@ -16,9 +16,9 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Kura Izakaya - Shibuya, Tokyo",
+  title: "Comptoir Mireille - Paris bistro, 11e",
   description:
-    "A small neighbourhood izakaya in Shibuya. Charcoal-grilled skewers, small plates, sake, natural wines. Open evenings only.",
+    "A small neighbourhood bistro in the 11th arrondissement. Steak frites, confit de canard, escargots, a short wine list. Open lunch and dinner, closed Mondays.",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
@@ -28,7 +28,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <header className="border-b border-[var(--line)]">
           <div className="mx-auto max-w-6xl px-6 sm:px-10 py-5 flex items-center justify-between">
             <Link href="/" className="font-display text-2xl tracking-tight">
-              Kura Izakaya
+              Comptoir Mireille
             </Link>
             <nav className="flex items-center gap-7 text-sm text-[var(--muted)]">
               <Link href="/menu" className="hover:text-[var(--ink)] transition-colors">
@@ -54,8 +54,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <footer className="border-t border-[var(--line)] mt-24">
           <div className="mx-auto max-w-6xl px-6 sm:px-10 py-10 text-sm text-[var(--muted)] flex flex-col gap-2 sm:flex-row sm:justify-between">
             <p>
-              <strong className="text-[var(--ink)]">Kura Izakaya</strong> — 2-chome, Shibuya, Tokyo.
-              Open evenings, closed Sundays.
+              <strong className="text-[var(--ink)]">Comptoir Mireille</strong> — rue Jean-Pierre
+              Timbaud, Paris 11e. Lunch and dinner, closed Mondays.
             </p>
             <p>
               This is a demo site. Built with{" "}

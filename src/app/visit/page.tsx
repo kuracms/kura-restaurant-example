@@ -1,6 +1,6 @@
 export const metadata = {
-  title: "Visit - Kura Izakaya",
-  description: "How to find Kura Izakaya in Shibuya, Tokyo.",
+  title: "Visit - Comptoir Mireille",
+  description: "How to find Comptoir Mireille in the 11th arrondissement, Paris.",
 };
 
 export default function VisitPage() {
@@ -8,26 +8,28 @@ export default function VisitPage() {
     <div className="mx-auto max-w-3xl px-6 sm:px-10 py-16 sm:py-24">
       <p className="text-xs uppercase tracking-[0.24em] text-[var(--accent)] mb-4">Visit</p>
       <h1 className="font-display text-5xl tracking-tight leading-tight">
-        Down the small lane off Center-gai.
+        Two minutes from M&eacute;tro Parmentier.
       </h1>
 
       <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 gap-x-10 gap-y-8 text-sm">
         <div>
           <p className="text-xs uppercase tracking-[0.18em] text-[var(--muted)] mb-2">Address</p>
           <p className="leading-relaxed">
-            2-14-3 Dogenzaka
+            114 rue Jean-Pierre Timbaud
             <br />
-            Shibuya-ku, Tokyo 150-0043
+            75011 Paris
             <br />
-            Japan
+            France
           </p>
         </div>
         <div>
           <p className="text-xs uppercase tracking-[0.18em] text-[var(--muted)] mb-2">Open</p>
           <p className="leading-relaxed">
-            Mon&ndash;Sat &nbsp; 18:00 to late
+            Tue&ndash;Sat &nbsp; 12:00&ndash;14:30 &amp; 19:00&ndash;22:30
             <br />
-            Sunday &nbsp; closed
+            Sunday &nbsp; 12:00&ndash;15:00 (lunch only)
+            <br />
+            Monday &nbsp; closed
           </p>
         </div>
         <div>
@@ -35,9 +37,12 @@ export default function VisitPage() {
             Reservations
           </p>
           <p className="leading-relaxed">
-            Walk-in most nights. Weekend bookings by email only:{" "}
-            <a className="underline underline-offset-4" href="mailto:hello@kura-izakaya.example">
-              hello@kura-izakaya.example
+            Walk-in for lunch and weekday dinners. Sunday lunch by email:{" "}
+            <a
+              className="underline underline-offset-4"
+              href="mailto:bonjour@comptoir-mireille.example"
+            >
+              bonjour@comptoir-mireille.example
             </a>
             .
           </p>
@@ -47,17 +52,16 @@ export default function VisitPage() {
             Getting there
           </p>
           <p className="leading-relaxed">
-            Six minutes&apos; walk from Shibuya station, Hachiko exit. Through Center-gai, left at
-            Tower Records, take the third lane on your right. Look for the small wooden door with
-            the noren curtain.
+            M&eacute;tro Parmentier (line 3), two minutes&apos; walk. Or M&eacute;tro Goncourt (line
+            11), five minutes. Look for the small painted sign and the chalkboard on the pavement.
           </p>
         </div>
       </div>
 
       <div className="mt-14 aspect-[16/9] rounded-sm overflow-hidden border border-[var(--line)] bg-[var(--bg-soft)]">
         <iframe
-          title="Map of Kura Izakaya"
-          src="https://maps.google.com/maps?q=35.658034,139.701636&z=16&output=embed"
+          title="Map of Comptoir Mireille"
+          src="https://maps.google.com/maps?q=48.866,2.376&z=16&output=embed"
           loading="lazy"
           referrerPolicy="no-referrer-when-downgrade"
           className="w-full h-full border-0"

@@ -1,11 +1,11 @@
 import Image from "next/image";
-import { fetchItems, fetchSections, formatJpy, type MenuSection, type MenuItem } from "@/lib/kura";
+import { fetchItems, fetchSections, formatEur, type MenuSection, type MenuItem } from "@/lib/kura";
 
 export const revalidate = 60;
 
 export const metadata = {
-  title: "Menu - Kura Izakaya",
-  description: "Tonight's menu at Kura Izakaya in Shibuya.",
+  title: "Menu - Comptoir Mireille",
+  description: "Today's menu at Comptoir Mireille in the 11th.",
 };
 
 export default async function MenuPage() {
@@ -15,14 +15,14 @@ export default async function MenuPage() {
   return (
     <div className="mx-auto max-w-5xl px-6 sm:px-10 py-16 sm:py-24">
       <header className="mb-16">
-        <p className="text-xs uppercase tracking-[0.24em] text-[var(--accent)] mb-4">Tonight</p>
+        <p className="text-xs uppercase tracking-[0.24em] text-[var(--accent)] mb-4">Today</p>
         <h1 className="font-display text-5xl sm:text-6xl leading-[0.95] tracking-tight">
           The menu, as it stands.
         </h1>
         <p className="mt-6 text-[var(--muted)] max-w-2xl leading-relaxed">
-          Prices in yen, tax included, no service charge. Most things take a few minutes &mdash;
-          skewers come in pairs and the rice plates take longest. Allergies, tell the chef when you
-          sit down.
+          Prices in euros, service compris, no covert covert charge. Most things take a few minutes
+          &mdash; the steak is fast, the duck takes longer, the blanquette is whatever it&rsquo;s
+          ready to be. Allergies, tell the cook when you sit down.
         </p>
       </header>
 
@@ -86,14 +86,11 @@ function Section({ section, items }: { section: MenuSection; items: MenuItem[] }
                 <h3 className="font-display text-xl">{item.title}</h3>
                 <span className="flex-1 border-b border-dotted border-[var(--line)] mb-1.5" />
                 <span className="text-sm tabular-nums text-[var(--muted)]">
-                  {formatJpy(item.price_jpy)}
+                  {formatEur(item.price_eur)}
                 </span>
               </div>
               <div className="mt-1 flex flex-wrap gap-x-3 gap-y-1 text-[10px] uppercase tracking-[0.18em] text-[var(--muted)]">
                 {item.vegetarian && <span>Vegetarian</span>}
-                {item.spice === "mild" && <span>Mild spice</span>}
-                {item.spice === "medium" && <span>Medium spice</span>}
-                {item.spice === "hot" && <span>Hot</span>}
               </div>
               <p className="mt-2 text-sm text-[var(--muted)] leading-relaxed">{item.description}</p>
             </div>
@@ -105,5 +102,5 @@ function Section({ section, items }: { section: MenuSection; items: MenuItem[] }
 }
 
 function itemMatchesSection(item: MenuItem, section: MenuSection): boolean {
-  return item.section.replace(/_/g, "-") === section.slug;
+  return item.section === section.slug || item.section.replace(/_/g, "-") === section.slug;
 }

@@ -26,6 +26,30 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en" className={`${fraunces.variable} ${inter.variable} h-full antialiased`}>
       <body className="min-h-full flex flex-col">
+        <div
+          style={{
+            background: "#111",
+            color: "#d9d9d9",
+            textAlign: "center",
+            padding: "0.45rem 1rem",
+            fontSize: "0.78rem",
+            letterSpacing: "0.02em",
+          }}
+        >
+          <a
+            href="https://kuracms.com"
+            target="_blank"
+            rel="noreferrer"
+            style={{
+              color: "#fff",
+              textDecoration: "none",
+              borderBottom: "1px solid rgba(255,255,255,0.4)",
+              paddingBottom: 1,
+            }}
+          >
+            This is a demonstration site for kura - see how it works at kuracms.com &rarr;
+          </a>
+        </div>
         <header>
           <div className="mx-auto max-w-6xl px-6 sm:px-10 pt-8 pb-3 text-center">
             <Link

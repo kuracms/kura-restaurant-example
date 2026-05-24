@@ -40,13 +40,16 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <nav className="border-y border-[var(--rule)]">
             <div className="mx-auto max-w-6xl px-6 sm:px-10 py-3 flex justify-center gap-10 text-[11px] uppercase tracking-[0.22em]">
               <Link href="/" className="hover:text-[var(--accent)] transition-colors">
-                Maison
+                Home
               </Link>
               <Link href="/menu" className="hover:text-[var(--accent)] transition-colors">
-                La Carte
+                Menu
+              </Link>
+              <Link href="/reserve" className="hover:text-[var(--accent)] transition-colors">
+                Reserve
               </Link>
               <Link href="/visit" className="hover:text-[var(--accent)] transition-colors">
-                Visiter
+                Visit
               </Link>
             </div>
           </nav>

@@ -66,7 +66,13 @@ export default async function HomePage() {
               href="/menu"
               className="px-7 py-3 rounded-full bg-[var(--accent)] text-[var(--accent-ink)] text-sm font-medium hover:bg-[var(--accent-deep)] transition-colors"
             >
-              La carte d&rsquo;aujourd&rsquo;hui &rarr;
+              See today&rsquo;s menu &rarr;
+            </Link>
+            <Link
+              href="/reserve"
+              className="px-7 py-3 rounded-full border border-[var(--rule)] text-sm font-medium hover:bg-[var(--ink)] hover:text-[var(--bg)] transition-colors"
+            >
+              Reserve a table
             </Link>
             <Link
               href="/visit"

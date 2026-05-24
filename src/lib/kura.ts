@@ -33,6 +33,16 @@ export interface MenuSection {
   published_at: string | null;
 }
 
+export interface Page {
+  id: string;
+  slug: string;
+  title: string;
+  subtitle?: string;
+  body: string;
+  published?: boolean;
+  published_at: string | null;
+}
+
 export interface MenuItem {
   id: string;
   slug: string;
@@ -67,6 +77,12 @@ export async function fetchSections(): Promise<MenuSection[]> {
 export async function fetchItems(): Promise<MenuItem[]> {
   const r = await kura<KuraListResponse<MenuItem>>("/menu_item?limit=100");
   return r.data;
+}
+
+export async function fetchPage(slug: string): Promise<Page | null> {
+  const r = await kura<KuraListResponse<Page>>("/page?limit=10");
+  const match = r.data.find((p) => p.published === true && p.slug === slug);
+  return match ?? null;
 }
 
 export function formatEur(n: number): string {

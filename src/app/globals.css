@@ -35,6 +35,42 @@ body {
   font-feature-settings: "ss01" on, "ss02" on, "ss03" on, "swsh" on;
 }
 
+.legal-prose p {
+  margin-bottom: 1.1rem;
+}
+.legal-prose p:last-child {
+  margin-bottom: 0;
+}
+.legal-prose strong {
+  color: var(--ink);
+  font-weight: 600;
+}
+.legal-prose a {
+  color: var(--accent);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.legal-prose h2 {
+  font-family: var(--font-fraunces), ui-serif, "Iowan Old Style", Georgia, serif;
+  font-size: 1.5rem;
+  margin-top: 2.25rem;
+  margin-bottom: 0.75rem;
+  letter-spacing: -0.01em;
+}
+.legal-prose h3 {
+  font-family: var(--font-fraunces), ui-serif, "Iowan Old Style", Georgia, serif;
+  font-size: 1.2rem;
+  margin-top: 1.75rem;
+  margin-bottom: 0.5rem;
+}
+.legal-prose ul,
+.legal-prose ol {
+  margin: 0 0 1.1rem 1.25rem;
+}
+.legal-prose ul { list-style: disc; }
+.legal-prose ol { list-style: decimal; }
+.legal-prose li { margin-bottom: 0.4rem; }
+
 .subtle-grain {
   background-image: radial-gradient(rgba(31, 26, 20, 0.025) 1px, transparent 1px);
   background-size: 3px 3px;

@@ -52,7 +52,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <main className="flex-1">{children}</main>
 
         <footer className="border-t border-[var(--line)] mt-24">
-          <div className="mx-auto max-w-6xl px-6 sm:px-10 py-10 text-sm text-[var(--muted)] flex flex-col gap-2 sm:flex-row sm:justify-between">
+          <div className="mx-auto max-w-6xl px-6 sm:px-10 py-10 text-sm text-[var(--muted)] flex flex-col gap-4 sm:flex-row sm:justify-between">
             <p>
               <strong className="text-[var(--ink)]">The Bistro</strong> — rue Jean-Pierre Timbaud,
               Paris 11e. Lunch and dinner, closed Mondays.
@@ -75,6 +75,14 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               </a>
               .
             </p>
+          </div>
+          <div className="mx-auto max-w-6xl px-6 sm:px-10 pb-10 -mt-4 text-xs uppercase tracking-[0.18em] text-[var(--muted)] flex gap-6">
+            <Link href="/privacy" className="hover:text-[var(--ink)] transition-colors">
+              Privacy
+            </Link>
+            <Link href="/terms" className="hover:text-[var(--ink)] transition-colors">
+              Terms
+            </Link>
           </div>
         </footer>
       </body>

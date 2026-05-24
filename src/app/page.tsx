@@ -144,9 +144,9 @@ export default async function HomePage() {
           La maison
         </p>
         <p className="font-display italic text-2xl sm:text-3xl leading-snug text-[var(--ink)]">
-          &ldquo;One menu, one cook, no specials nobody can pronounce. We don&rsquo;t take
-          reservations except on Sundays, and if we&rsquo;re full when you arrive we&rsquo;ll pour
-          you a glass at the bar across the street until a table opens up.&rdquo;
+          &ldquo;One menu, one cook, no specials nobody can pronounce. Reserve a table if you want
+          one held; walk in if you&rsquo;d rather chance it. Either way we&rsquo;ll pour you a glass
+          at the bar across the street if we&rsquo;re busy when you arrive.&rdquo;
         </p>
       </section>
     </>

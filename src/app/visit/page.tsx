@@ -37,11 +37,8 @@ export default function VisitPage() {
             Reservations
           </p>
           <p className="leading-relaxed">
-            Walk-in for lunch and weekday dinners. Sunday lunch by email:{" "}
-            <a className="underline underline-offset-4" href="mailto:hello@thebistro.example">
-              hello@thebistro.example
-            </a>
-            .
+            Reserve a table online, or walk in any night. If we&rsquo;re full we&rsquo;ll seat you
+            at the bar across the street and bring you over when a table opens up.
           </p>
         </div>
         <div>

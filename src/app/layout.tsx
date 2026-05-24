@@ -19,6 +19,7 @@ export const metadata: Metadata = {
   title: "The Bistro - Paris bistro",
   description:
     "A small neighbourhood bistro in the 11th. Steak frites, confit de canard, escargots, a short wine list. Open lunch and dinner, closed Mondays.",
+  robots: { index: false, follow: false },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

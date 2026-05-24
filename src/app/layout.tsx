@@ -31,7 +31,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               href="/"
               className="font-display italic text-3xl sm:text-[2.4rem] tracking-tight inline-block text-[var(--accent)]"
             >
-              Le Petit Timbaud
+              The Bistro
             </Link>
             <p className="mt-2 text-[10px] uppercase tracking-[0.3em] text-[var(--muted)]">
               Bistro &middot; Paris 11<sup>e</sup> &middot; depuis 2006
@@ -58,7 +58,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <div className="mx-auto max-w-6xl px-6 sm:px-10 py-12 flex flex-col items-center gap-6 text-center">
             <ChairMark />
             <p className="text-sm text-[var(--muted)] max-w-md leading-relaxed">
-              <strong className="text-[var(--ink)] font-medium">Le Petit Timbaud</strong>
+              <strong className="text-[var(--ink)] font-medium">The Bistro</strong>
               <br />
               114 rue Jean-Pierre Timbaud, 75011 Paris
               <br />

@@ -4,8 +4,8 @@ import { fetchItems, fetchSections, formatEur, type MenuSection, type MenuItem }
 export const revalidate = 60;
 
 export const metadata = {
-  title: "La Carte - Le Petit Timbaud",
-  description: "Today's menu at Le Petit Timbaud in the 11th.",
+  title: "Menu - The Bistro",
+  description: "Today's menu at The Bistro in the 11th.",
 };
 
 export default async function MenuPage() {

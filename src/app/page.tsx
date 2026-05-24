@@ -23,7 +23,7 @@ export default async function HomePage() {
     month: "long",
   });
 
-  const title = home?.title ?? "Le Petit Timbaud";
+  const title = home?.title ?? "The Bistro";
   const subtitle = home?.subtitle ?? "A small Paris bistro in the 11th";
   const bodyParagraphs = (home?.body ?? "")
     .split(/\n\s*\n/)

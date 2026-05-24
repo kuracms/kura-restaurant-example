@@ -1,13 +1,15 @@
 @import "tailwindcss";
 
 :root {
-  --bg: #fbf6ec;          /* warm cream */
-  --bg-soft: #f4ebd9;     /* paler cream for cards */
-  --ink: #1f1a14;         /* near-black warm */
-  --muted: #6b6256;
-  --line: #ddd2bd;
-  --accent: #8b2a1b;      /* deep tomato red */
-  --accent-ink: #fdf5e8;
+  --bg: #f3ece0;          /* warm paper, less yellow */
+  --bg-soft: #ece2d0;     /* paler card */
+  --ink: #1a1410;         /* near-black warm */
+  --muted: #6a5f53;
+  --line: #c9bba4;
+  --accent: #6b1e2b;      /* claret */
+  --accent-deep: #4a1320; /* oxblood for hover */
+  --accent-ink: #f7ecd9;  /* cream readable on accent */
+  --rule: #2a1f1a;        /* deep ink for thin rules */
 }
 
 @theme inline {
@@ -17,9 +19,22 @@
   --color-muted: var(--muted);
   --color-line: var(--line);
   --color-accent: var(--accent);
+  --color-accent-deep: var(--accent-deep);
   --color-accent-ink: var(--accent-ink);
   --font-serif: var(--font-fraunces);
   --font-sans: var(--font-inter);
+}
+
+.smallcaps {
+  font-variant: small-caps;
+  letter-spacing: 0.1em;
+}
+
+.menu-leader {
+  background-image: radial-gradient(circle, var(--line) 1px, transparent 1.2px);
+  background-position: bottom;
+  background-size: 6px 4px;
+  background-repeat: repeat-x;
 }
 
 body {

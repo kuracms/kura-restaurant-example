@@ -80,7 +80,7 @@ export async function fetchItems(): Promise<MenuItem[]> {
 }
 
 export async function fetchPage(slug: string): Promise<Page | null> {
-  const r = await kura<KuraListResponse<Page>>("/page?limit=10");
+  const r = await kura<KuraListResponse<Page>>("/global?limit=10");
   const match = r.data.find((p) => p.published === true && p.slug === slug);
   return match ?? null;
 }
